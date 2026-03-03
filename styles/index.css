@@ -1,13 +1,76 @@
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-gap: 10px;
-    height: 90vh;
-    width: auto;
-    background-color: rgb(3, 114, 108);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 10px;
+  height: 700px;
+  background-color: #f0f0f0;
 }
 
-.grid-item {
-    
+/* NOTE: Gjorde 12 "grid-template-rows" för att enklare kunna placera boxarna exakt, visste inte hur jag skulle göra det utan att dela upp allt i egna grid containers*/
+.first { 
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+  background-color: #267a5b;
+}
+
+.second { 
+  grid-column: 1 / 3;
+  grid-row: 4 / 7;
+  background-color: #3e9447;
+}
+
+.third { 
+  grid-column: 3 / 5;
+  grid-row: 1 / 7;
+  background-color: #89b82b;
+}
+
+.fourth {
+  grid-column: 5 / 7;
+  grid-row: 1 / 3;
+  background-color: #d8e41f;
+}
+
+.fifth {
+  grid-column: 5 / 7;
+  grid-row: 3 / 5;
+  background-color: #ecf32e;
+}
+
+.sixth {
+  grid-column: 5 / 7;
+  grid-row: 5 / 7;
+  background-color: #f6ff4d;
+}
+
+.seventh { 
+  grid-column: 1 / 3;
+  grid-row: 7 / 13;
+  background-color: #61a634;
+}
+
+
+.eighth {
+  grid-column: 3 / 4;
+  grid-row: 7 / 10;
+  background-color: #afd41f;
+}
+
+.ninth {
+  grid-column: 3 / 4;
+  grid-row: 10 / 13;
+  background-color: #c9e21e;
+}
+
+.tenth {
+  grid-column: 4 / 6;
+  grid-row: 7 / 13;
+  background-color: #d9e01f;
+}
+
+.eleventh {
+  grid-column: 6 / 7;
+  grid-row: 7 / 13;
+  background-color: #217355;
 }
